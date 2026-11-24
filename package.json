@@ -1,0 +1,14 @@
+{
+  "name": "pi-telegram-remote-monitor",
+  "version": "1.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Docker-ready Telegram monitor and remote prompt bridge for existing Pi sessions",
+  "scripts": {
+    "start": "node --use-env-proxy controller.mjs",
+    "check": "node --check controller.mjs",
+    "docker:up": "docker compose up -d --build",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f"
+  }
+}
